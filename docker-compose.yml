@@ -19,7 +19,6 @@ services:
       MODRINTH_PROJECTS: |
         fabric-api,
         create,
-        create-fabric,
         create-dreams-and-desires,
         createaddition,
         copycats,
@@ -45,6 +44,7 @@ services:
         xaeros-minimap,
         veinminer,
         jei,
+        jade,
         continuity,
         simple-voice-chat,
         lambdynamiclights,
