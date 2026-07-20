@@ -59,6 +59,7 @@ services:
       # Set to "false" after the first successful run to speed up restarts
       # (mods are persisted in the /data volume).
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
+      MODRINTH_PROJECTS_DEFAULT_VERSION_TYPE: "beta"
 
       # ── Server properties ───────────────────────────────
       DIFFICULTY: normal
