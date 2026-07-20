@@ -20,6 +20,7 @@ services:
         create,
         create-dreams-and-desires,
         createaddition,
+        timber-strike,
         copycats,
         create-deco,
         create-diesel-generators,

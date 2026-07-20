@@ -33,6 +33,43 @@ listed optimisation / QoL mods on first launch.  All data lives in `./data/`.
 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | Memory usage reduction |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | Kotlin runtime (Create dependency) |
 
+## What players need to install
+
+**Yes — every player must install the content mods on their own PC.**
+Players who join without them will be kicked with a mod mismatch error.
+
+The easiest way is to use a launcher that supports Modrinth packs, such as
+[Prism Launcher](https://prismlauncher.org/) or [ATLauncher](https://atlauncher.com/).
+
+### Required (every player)
+
+1. Install **Fabric Loader** for the matching Minecraft version
+2. Drop these `.jar` files into `%APPDATA%\.minecraft\mods\`:
+
+| Mod | Download |
+|---|---|
+| Fabric API | [modrinth.com/mod/fabric-api](https://modrinth.com/mod/fabric-api) |
+| Create (Fabric) | [modrinth.com/mod/create-fabric](https://modrinth.com/mod/create-fabric) |
+| Fabric Language Kotlin | [modrinth.com/mod/fabric-language-kotlin](https://modrinth.com/mod/fabric-language-kotlin) |
+| Create Aeronautics | See [Adding Create Aeronautics](#adding-create-aeronautics) |
+
+> **Create add-ons** (Steam 'n' Rails, Dreams & Desires) — if present on the
+> server, players must also install them.  Remove them from `MODRINTH_PROJECTS`
+> if you want to keep the client-side list minimal.
+
+### Recommended (FPS boost, optional)
+
+| Mod | Download |
+|---|---|
+| Sodium | [modrinth.com/mod/sodium](https://modrinth.com/mod/sodium) |
+| Iris | [modrinth.com/mod/iris](https://modrinth.com/mod/iris) |
+| Lithium | [modrinth.com/mod/lithium](https://modrinth.com/mod/lithium) |
+
+### Server-only (players do NOT need these)
+
+Lithium and FerriteCore only run on the server — players should **not** install them
+(they're ignored client-side anyway).
+
 ## Adding Create Aeronautics
 
 Create Aeronautics is in active development.  To add it once a stable Modrinth
