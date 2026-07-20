@@ -28,7 +28,6 @@ services:
         create-diesel-generators,
         create-central-kitchen,
         create-enchantment-industry,
-        create-new-age,
         interiors,
         create-design-n-decor,
         create-structures,
