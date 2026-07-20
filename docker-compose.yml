@@ -45,7 +45,6 @@ services:
         jade,
         continuity,
         simple-voice-chat,
-        lambdynamiclights,
         sound-physics-remastered,
         chat-heads,
         ambientsounds,
