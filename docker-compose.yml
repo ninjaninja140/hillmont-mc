@@ -55,7 +55,6 @@ services:
         waystones,
         netherportalfix,
         weather-storms-tornadoes,
-        voicechat-names,
         dynamictrees,
         dynamictreesplus,
         claimpoints,
