@@ -10,7 +10,7 @@ services:
       EULA: "TRUE"
       TYPE: FABRIC
       # Use the latest Fabric loader; the image resolves the newest release automatically
-      VERSION: LATEST
+      VERSION: 26.1
 
       MEMORY: "12G"
       JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200"
@@ -23,10 +23,18 @@ services:
         create-dreams-and-desires,
         create-steam-n-rails,
         createaddition,
+        copycats,
         create-deco,
+        create-diesel-generators,
+        create-connected,
         create-central-kitchen,
+        create-enchantment-industry,
+        create-new-age,
+        interiors,
         create-design-n-decor,
         create-structures,
+        create-ore-excavation,
+        create-dreams-and-desires,
         create-liquid-fuel,
         create-aeronautics,
         sodium,
@@ -43,6 +51,7 @@ services:
         continuity,
         simple-voice-chat,
         lambdynamiclights,
+        sound-physics-remastered,
         chat-heads,
         memoryleakfix,
         presence-footsteps,
