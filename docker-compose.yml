@@ -26,7 +26,6 @@ services:
         copycats,
         create-deco,
         create-diesel-generators,
-        create-connected,
         create-central-kitchen,
         create-enchantment-industry,
         create-new-age,
@@ -61,7 +60,7 @@ services:
       # Automatically download mods on every container start.
       # Set to "false" after the first successful run to speed up restarts
       # (mods are persisted in the /data volume).
-      MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: "true"
+      MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
 
       # ── Server properties ───────────────────────────────
       DIFFICULTY: normal
