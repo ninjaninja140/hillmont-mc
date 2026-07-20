@@ -58,7 +58,8 @@ services:
         voicechat-names,
         dynamictrees,
         dynamictreesplus,
-        claimpoints
+        claimpoints,
+        coroutil
 
       # Automatically download mods on every container start.
       # Set to "false" after the first successful run to speed up restarts
