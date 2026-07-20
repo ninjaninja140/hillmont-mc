@@ -8,7 +8,7 @@ services:
       - "24454:24454/udp" # Create Aeronautics physics sync (optional, if used)
     environment:
       EULA: "TRUE"
-      TYPE: FABRIC
+      TYPE: NEOFORGE
       # Use the latest Fabric loader; the image resolves the newest release automatically
       VERSION: 1.21.1
 
