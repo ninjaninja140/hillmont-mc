@@ -21,7 +21,6 @@ services:
         create,
         create-fabric,
         create-dreams-and-desires,
-        create-steam-n-rails,
         createaddition,
         copycats,
         create-deco,
