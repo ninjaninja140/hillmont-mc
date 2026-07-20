@@ -27,7 +27,6 @@ services:
         create-deco,
         create-diesel-generators,
         create-central-kitchen,
-        interiors,
         create-design-n-decor,
         create-structures,
         create-liquid-fuel,
