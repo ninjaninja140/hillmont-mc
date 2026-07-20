@@ -55,7 +55,6 @@ services:
         waystones,
         netherportalfix,
         weather-storms-tornadoes,
-        chest-locker,
         voicechat-names,
         dynamictrees,
         dynamictreesplus,
