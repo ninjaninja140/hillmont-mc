@@ -10,7 +10,7 @@ services:
       EULA: "TRUE"
       TYPE: FABRIC
       # Use the latest Fabric loader; the image resolves the newest release automatically
-      VERSION: 26.1
+      VERSION: 1.21.1
 
       MEMORY: "12G"
       JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200"
