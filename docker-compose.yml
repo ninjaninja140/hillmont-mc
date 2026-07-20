@@ -45,7 +45,6 @@ services:
         continuity,
         simple-voice-chat,
         lambdynamiclights,
-        sound-physics-remastered,
         chat-heads,
         memoryleakfix,
         presence-footsteps,
