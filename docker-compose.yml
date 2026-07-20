@@ -24,7 +24,6 @@ services:
         create-steam-n-rails,
         createaddition,
         create-deco,
-        create-diesel-generators,
         create-central-kitchen,
         create-design-n-decor,
         create-structures,
