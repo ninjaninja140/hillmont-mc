@@ -1,0 +1,90 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: Hillmont-MC
+    restart: unless-stopped
+    ports:
+      - "25565:25565" # Minecraft Java Edition
+      - "24454:24454/udp" # Create Aeronautics physics sync (optional, if used)
+    environment:
+      EULA: "TRUE"
+      TYPE: FABRIC
+      # Use the latest Fabric loader; the image resolves the newest release automatically
+      VERSION: LATEST
+
+      MEMORY: "12G"
+      JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200"
+      USE_AIKAR_FLAGS: "true"
+
+      MODRINTH_PROJECTS: |
+        fabric-api,
+        create,
+        create-fabric,
+        create-dreams-and-desires,
+        create-steam-n-rails,
+        createaddition,
+        copycats,
+        create-deco,
+        create-diesel-generators,
+        create-connected,
+        create-central-kitchen,
+        create-enchantment-industry,
+        create-new-age,
+        interiors,
+        create-design-n-decor,
+        create-structures,
+        create-ore-excavation,
+        create-dreams-and-desires,
+        create-liquid-fuel,
+        create-aeronautics,
+        sodium,
+        sodium-extra,
+        iris,
+        lithium,
+        ferrite-core,
+        fabric-language-kotlin,
+        entityculling,
+        xaeros-world-map,
+        xaeros-minimap,
+        veinminer,
+        jei,
+        continuity,
+        simple-voice-chat,
+        lambdynamiclights,
+        sound-physics-remastered,
+        chat-heads,
+        memoryleakfix,
+        presence-footsteps,
+        ambientsounds,
+        biomes-o-plenty
+
+      # Automatically download mods on every container start.
+      # Set to "false" after the first successful run to speed up restarts
+      # (mods are persisted in the /data volume).
+      MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: "true"
+
+      # ── Server properties ───────────────────────────────
+      DIFFICULTY: normal
+      MAX_PLAYERS: 40
+      VIEW_DISTANCE: 12
+      SIMULATION_DISTANCE: 8
+      ONLINE_MODE: "true"
+      ALLOW_NETHER: "true"
+      ALLOW_FLIGHT: "true"
+      ENABLE_COMMAND_BLOCK: "true"
+      SPAWN_PROTECTION: 0
+      MOTD: "wet fart"
+      OPS: |
+        nn140
+    volumes:
+      - ./data:/data
+
+    tty: true
+    stdin_open: true
+
+    healthcheck:
+      test: ["CMD", "mc-monitor", "status", "--host", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
