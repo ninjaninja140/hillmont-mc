@@ -17,7 +17,6 @@ services:
       USE_AIKAR_FLAGS: "true"
 
       MODRINTH_PROJECTS: |
-        fabric-api,
         create,
         create-dreams-and-desires,
         createaddition,
