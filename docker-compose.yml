@@ -53,8 +53,6 @@ services:
         lambdynamiclights,
         sound-physics-remastered,
         chat-heads,
-        memoryleakfix,
-        presence-footsteps,
         ambientsounds,
         biomes-o-plenty
 
