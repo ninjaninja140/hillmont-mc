@@ -40,8 +40,6 @@ services:
         sodium-extra,
         iris,
         lithium,
-        ferrite-core,
-        fabric-language-kotlin,
         entityculling,
         xaeros-world-map,
         xaeros-minimap,
