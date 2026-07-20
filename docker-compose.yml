@@ -28,7 +28,13 @@ services:
         create-central-kitchen,
         create-enchantment-industry,
         create-new-age,
+        create-food,
+        naturalist,
         interiors,
+        spawn-mod,
+        tphome,
+        easy-tpa,
+        farmers-delight,
         create-design-n-decor,
         create-ore-excavation,
         create-dreams-and-desires,
@@ -45,7 +51,15 @@ services:
         sound-physics-remastered,
         chat-heads,
         ambientsounds,
-        biomes-o-plenty
+        biomes-o-plenty,
+        waystones,
+        netherportalfix,
+        weather-storms-tornadoes,
+        chest-locker,
+        voicechat-names,
+        dynamictrees,
+        dynamictreesplus,
+        claimpoints
 
       # Automatically download mods on every container start.
       # Set to "false" after the first successful run to speed up restarts
@@ -62,7 +76,7 @@ services:
       ALLOW_NETHER: "true"
       ALLOW_FLIGHT: "true"
       ENABLE_COMMAND_BLOCK: "true"
-      SPAWN_PROTECTION: 0
+      SPAWN_PROTECTION: 50
       MOTD: "wet fart"
       OPS: |
         nn140
