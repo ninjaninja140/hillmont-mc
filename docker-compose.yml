@@ -32,8 +32,6 @@ services:
         interiors,
         create-design-n-decor,
         create-structures,
-        create-ore-excavation,
-        create-dreams-and-desires,
         create-liquid-fuel,
         create-aeronautics,
         sodium,
