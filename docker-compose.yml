@@ -56,8 +56,7 @@ services:
         netherportalfix,
         dynamictrees,
         dynamictreesplus,
-        claimpoints,
-        coroutil
+        claimpoints
 
       # Automatically download mods on every container start.
       # Set to "false" after the first successful run to speed up restarts
